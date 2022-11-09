@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 30px;
+
+    mat-divider {
+        margin-bottom: 300px;
+    }
+
+    button {
+        margin-bottom: 80px;
+        width: 300px;
+    }
+
+    .songs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        iframe {
+            margin-top: 10px;
+            width: 300px;
+        }
+    }
+}

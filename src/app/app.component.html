@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="question" *ngFor="let question of questions  let i = index">
+        <div class="songs" *ngIf="question.showSongs">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/04RFAnuBZkyITGUNIbZHhb?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1q8VMNy2RTTl7dZhVIU6hk?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2dCBXxXNur85q9gGIpsAdr?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6FI7ErssBsLlz0bQyjXeIc?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2TE9rkhJYDctxgzak0AnSb?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>       
+         </div>
+        <app-quiz id="app-quiz-{{i}}" 
+            [question]="question" 
+            [position]="i" 
+            [lastQuestion]="isLastQuestion(i)">
+        </app-quiz>
+        <mat-divider *ngIf="!isLastQuestion(i)"></mat-divider>
+    </div>
+    <button (click)="clickSend()" mat-raised-button color="primary">Enviar</button>
+</div>

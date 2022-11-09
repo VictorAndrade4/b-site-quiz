@@ -1,0 +1,12 @@
+<div class="container">
+    <mat-card>
+        <img [src]="question?.image">
+        <p class="question-text">{{question?.text}}</p>
+        <mat-selection-list #list [multiple]="false" (selectionChange)="selectionChange($event.option)">
+            <mat-list-option *ngFor="let alternative of question?.alternatives" [value]="alternative">
+                {{alternative.text}}
+            </mat-list-option>
+        </mat-selection-list>
+        <button *ngIf="!lastQuestion" (click)="onNextClick($event)" mat-stroked-button>Próximo</button>
+    </mat-card>
+</div>
