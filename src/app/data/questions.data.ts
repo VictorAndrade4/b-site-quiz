@@ -63,6 +63,18 @@ export default function getQuestions() {
             ]
         },
         {
+            id: 6,
+            text: "O Ross tem alergia a...?",
+            image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DvFf-KImBK9U&psig=AOvVaw0ZuouZPcmd954eIG-vM5GJ&ust=1668121322238000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMiK5aiaovsCFQAAAAAdAAAAABAE",
+            alternatives: [
+                { text: "Camarão", isCorrect: false },
+                { text: "Azeitona", isCorrect: false },
+                { text: "Amendoim", isCorrect: false },
+                { text: "Kiwi", isCorrect: false },
+                { text: "Picada de abelha", isCorrect: false },
+            ]
+        },
+        {
             id: 7,
             text: "Doutora, qual a melhor residência para hoje?",
             image: "https://i.pinimg.com/originals/d6/11/07/d6110767decb03cd46e59580aeddff0f.jpg",
